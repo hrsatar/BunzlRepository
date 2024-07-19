@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Logic.DTOs.SubTaskDTOs
+{
+    public class SubTaskCreateUpdateDTO
+    {
+        [Required]
+        public int taskId { get; set; }
+        [Required]
+        public string name { get; set; }
+        [Required]
+        public bool completed { get; set; }
+    }
+}
